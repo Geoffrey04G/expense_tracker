@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Orbitron', sans-serif;
+    background: #0f0f1b;
+    color: #00ffee;
+}
+
+h1, h2, h3, h4 {
+    text-shadow: 0 0 10px #00ffee;
+}
+
+button, input, select, textarea {
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #00ffee;
+    box-shadow: 0 0 10px #00ffee;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+.stButton>button {
+    background: linear-gradient(145deg, #00ffee, #0066ff);
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.stButton>button:hover {
+    box-shadow: 0 0 20px #ff00ff;
+    transform: scale(1.05);
+}
+
+div[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #000011 0%, #001133 100%);
+    border-right: 2px solid #00ffee;
+}
+
+.sidebar-title {
+    font-size: 1.2rem;
+    color: #00ffee;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00ffee;
+    margin-bottom: 10px;
+}
+
+.tip-card {
+    background: rgba(0, 0, 20, 0.7);
+    border: 1px solid #00ffee;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00ffee;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #00ffee; }
+    to { box-shadow: 0 0 20px #ff00ff; }
+}
+
