@@ -40,14 +40,6 @@ div[data-testid="stSidebar"] {
     border-right: 2px solid #00ffee;
 }
 
-.sidebar-title {
-    font-size: 1.2rem;
-    color: #00ffee;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #00ffee;
-    margin-bottom: 10px;
-}
-
 .tip-card {
     background: rgba(0, 0, 20, 0.7);
     border: 1px solid #00ffee;
@@ -62,3 +54,35 @@ div[data-testid="stSidebar"] {
     to { box-shadow: 0 0 20px #ff00ff; }
 }
 
+/* app/style.css - Add this at the end of the existing file */
+
+.sidebar-section {
+    margin-bottom: 30px;
+}
+
+.stSidebar .element-container {
+    margin-bottom: 20px;
+}
+
+.stRadio > div {
+    gap: 12px;
+}
+
+h2, h3, h4 {
+    margin-top: 20px;
+}
+/* Just in case you want to use custom glowing styles */
+.glow-title {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.glow-subtext {
+    color: #bbbbbb;
+    text-shadow: 0 0 8px #888888;
+}
+/* For glowing text */
+.glow-text {
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
